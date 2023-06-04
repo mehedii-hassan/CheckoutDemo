@@ -232,6 +232,7 @@
             android:id="@+id/containerDiscountCoupon"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
             android:background="@drawable/discount_coupon_background"
             app:layout_constraintTop_toBottomOf="@+id/etNote">
 
@@ -239,16 +240,19 @@
                 android:id="@+id/etDiscountCoupon"
                 android:layout_width="match_parent"
                 android:layout_height="55dp"
+                android:layout_margin="1dp"
+                android:background="@drawable/coupon_et_background"
                 android:hint="Discount Coupon"
                 android:textColor="#040D1B"
                 android:textSize="16sp"
+                app:layout_constraintEnd_toStartOf="@+id/tvAdd"
                 app:layout_constraintTop_toTopOf="parent" />
 
             <TextView
                 android:id="@+id/tvAdd"
                 android:layout_width="100dp"
                 android:layout_height="55dp"
-                android:background="@drawable/item_background_two"
+                android:background="@drawable/add_background"
                 android:gravity="center"
                 android:text="Add"
                 android:textColor="#ffffff"

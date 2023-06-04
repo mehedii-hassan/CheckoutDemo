@@ -1,6 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:id="@+id/nav_graph">
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/branchCheckoutFragment">
 
+    <fragment
+        android:id="@+id/branchCheckoutFragment"
+        android:name="com.example.checkout.ui.fragments.BranchCheckoutFragment"
+        android:label="fragment_branch_checkout"
+        tools:layout="@layout/fragment_branch_checkout" />
 </navigation>
