@@ -9,7 +9,8 @@
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="wrap_content"
+        android:paddingBottom="20dp">
 
 
         <androidx.constraintlayout.widget.ConstraintLayout
@@ -216,11 +217,13 @@
             android:id="@+id/etNote"
             android:layout_width="match_parent"
             android:layout_height="100dp"
+            android:layout_marginTop="10dp"
             android:background="@drawable/custom_et_background"
             android:gravity="start"
             android:hint="Lorem ipsum dolor sit amet..."
-            android:paddingStart="20dp"
-            android:paddingTop="20dp"
+            android:paddingStart="10dp"
+            android:paddingTop="10dp"
+            android:paddingEnd="10dp"
             android:textColor="#333333"
             android:textSize="16sp"
             android:textStyle="bold"
@@ -231,35 +234,35 @@
         <androidx.constraintlayout.widget.ConstraintLayout
             android:id="@+id/containerDiscountCoupon"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="55dp"
             android:layout_marginTop="32dp"
             android:background="@drawable/discount_coupon_background"
             app:layout_constraintTop_toBottomOf="@+id/etNote">
 
             <EditText
                 android:id="@+id/etDiscountCoupon"
-                android:layout_width="match_parent"
-                android:layout_height="55dp"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
                 android:layout_margin="1dp"
                 android:background="@drawable/coupon_et_background"
                 android:hint="Discount Coupon"
+                android:paddingStart="5dp"
                 android:textColor="#040D1B"
                 android:textSize="16sp"
                 app:layout_constraintEnd_toStartOf="@+id/tvAdd"
-                app:layout_constraintTop_toTopOf="parent" />
+                app:layout_constraintStart_toStartOf="parent" />
 
             <TextView
                 android:id="@+id/tvAdd"
                 android:layout_width="100dp"
-                android:layout_height="55dp"
+                android:layout_height="match_parent"
                 android:background="@drawable/add_background"
                 android:gravity="center"
                 android:text="Add"
                 android:textColor="#ffffff"
                 android:textSize="16sp"
                 android:textStyle="bold"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
+                app:layout_constraintEnd_toEndOf="parent" />
 
 
         </androidx.constraintlayout.widget.ConstraintLayout>
@@ -398,6 +401,20 @@
             android:textStyle="bold"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="@+id/tvTotal" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="40dp"
+            android:background="@drawable/proceed_to_payment_background"
+            android:text="Proceed to Payment"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="13sp"
+            android:gravity="center"
+            android:textStyle="bold"
+            app:cornerRadius="12dp"
+            app:layout_constraintTop_toBottomOf="@+id/tvSRTotal" />
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>
